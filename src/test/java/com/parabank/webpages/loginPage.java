@@ -42,6 +42,20 @@ public class loginPage {
     WebElement aboutUsIconBtn;
     @FindBy(xpath = "(//a[@href='contact.htm'])[1]")
     WebElement contactUsIconBtn;
+    @FindBy(linkText = "Withdraw Funds")
+    WebElement withdrawFundsBtn;
+    @FindBy(linkText = "Transfer Funds")
+    WebElement atmTransferFundsBtn;
+    @FindBy(linkText = "Check Balances")
+    WebElement checkBalancesBtn;
+    @FindBy(linkText = "Make Deposits")
+    WebElement makeDepositsBtn;
+    @FindBy(linkText = "Bill Pay")
+    WebElement billPayBtn;
+    @FindBy(linkText = "Account History")
+    WebElement accountHistoryBtn;
+    @FindBy(xpath = "(//*[@href='services/bank?_wadl&_type=xml'])[3]")
+    WebElement onlineTransferFundsBtn;
 
     public void clickAdminImgBtn() {
         adminImgBtn.click();
@@ -79,19 +93,19 @@ public class loginPage {
         forgotInfoBtn.click();
     }
 
-    public void clickRegisterBtn(){
+    public void clickRegisterBtn() {
         registerBtn.click();
     }
 
-    public void clickHomePageIconBtn(){
+    public void clickHomePageIconBtn() {
         homePageIconBtn.click();
     }
 
-    public void clickAboutUsIconBtn(){
+    public void clickAboutUsIconBtn() {
         aboutUsIconBtn.click();
     }
 
-    public void clickContactUsIconBtn(){
+    public void clickContactUsIconBtn() {
         contactUsIconBtn.click();
     }
 
